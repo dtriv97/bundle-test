@@ -1,3 +1,11 @@
+export enum UploadStatus {
+  Starting,
+  InProgress,
+  Completed,
+  Failed,
+  Cancelled,
+}
+
 export const AcceptedImageFileTypes = ["image/png", "image/jpeg", "image/jpg"];
 
 export const AcceptedFileTypes = AcceptedImageFileTypes.concat([
