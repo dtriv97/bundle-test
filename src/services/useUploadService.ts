@@ -1,8 +1,5 @@
 import { useState } from "react";
-import {
-  UploadFileService,
-  UploadFileServiceResponse,
-} from "../services/uploadService";
+import { UploadFileService, UploadFileServiceResponse } from "./UploadService";
 
 interface UploadResponse {
   taskId: string;

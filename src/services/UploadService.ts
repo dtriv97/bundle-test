@@ -1,4 +1,10 @@
-import { UploadStatus } from "../utils/constants";
+export enum UploadStatus {
+  Starting,
+  InProgress,
+  Completed,
+  Failed,
+  Cancelled,
+}
 
 interface UploadProgress {
   progress: number;
