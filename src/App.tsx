@@ -5,12 +5,19 @@ import FileUploader from "./components/FileUploader";
 function App() {
   return (
     <MantineProvider>
-      <Stack>
+      <Stack
+        h="100vh"
+        justify="center"
+        align="center"
+        style={{ padding: "20px" }}
+      >
         <Card
           style={{
             backgroundColor: "#f0f0f0",
             padding: "20px",
             borderRadius: "10px",
+            width: "100%",
+            maxWidth: "800px",
           }}
         >
           <Title
