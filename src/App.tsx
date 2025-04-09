@@ -1,15 +1,25 @@
 import "./App.css";
-import { Card, FileInput, Stack, Title, MantineProvider } from "@mantine/core";
+import { Card, Stack, Title, MantineProvider } from "@mantine/core";
+import FileUploader from "./components/FileUploader";
 
 function App() {
   return (
     <MantineProvider>
       <Stack>
-        <Card>
-          <Title order={1}>File Uploader</Title>
-        </Card>
-        <Card>
-          <FileInput />
+        <Card
+          style={{
+            backgroundColor: "#f0f0f0",
+            padding: "20px",
+            borderRadius: "10px",
+          }}
+        >
+          <Title
+            order={1}
+            c={"#1a1a1a"}
+          >
+            File Uploader
+          </Title>
+          <FileUploader />
         </Card>
       </Stack>
     </MantineProvider>
